@@ -17,4 +17,6 @@ public class Membro {
 	private Double Cpf;
 	private String nome;
 	private String endereço;
+	private Cargo cargo;
+	private Departamento departamento;
 }
