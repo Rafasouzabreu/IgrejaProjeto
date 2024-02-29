@@ -28,12 +28,12 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping(value = "/api/membros")
 public class MembroController {
-
-	@Autowired
-	MembroService membroService;
-
-	@Autowired
-	ModelMapper modelMapper;
+    
+	
+	private final MembroService membroService = null;
+ 
+	
+	private final ModelMapper modelMapper = null;
 
 	@PostMapping
 	public ResponseEntity<SuccessResponseDto> post(@RequestBody @Valid MembroPostDto dto) throws Exception {

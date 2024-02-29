@@ -10,10 +10,10 @@ import jakarta.validation.Valid;
 
 public interface MembroService {
 	
-	List<Membro> findAll() throws Exception;
-    public Membro findById (UUID id) throws Exception;
-	
 	void create(@Valid MembroPostDto dto) throws Exception;
 	void update(MembroPutDto membro) throws Exception;
     void delete(UUID id)throws Exception;
+    
+    List<Membro> findAll() throws Exception;
+    public Membro findById (UUID id) throws Exception;
 }
